@@ -57,7 +57,7 @@ main{
 
 .container-image{
     width: 35%;
-    background-image: url(/main.png);
+    background-image: url(/assets/images/main.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

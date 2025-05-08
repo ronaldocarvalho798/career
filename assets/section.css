@@ -1,12 +1,9 @@
-section{
-
-}
 
 .background-section{
     display: flex;
     justify-content: center;
     position: relative;
-    background-image: url(/section.png);
+    background-image: url(/assets/images/section.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,10 +42,12 @@ section{
 
 .description-section{
     cursor: pointer;
-    background-color: #0e0e10;
-    border-radius: 17px;
-    width: 350px;
-    padding: 2rem 1rem;
+    background-color: #09090A;
+    border: 1px solid #434343;
+    border-radius: 10px;
+    width: 340px;
+    height: 330px;
+    padding: 1.7rem 1.5rem;
     transition: 0.1s ease-in;
 }
 
@@ -56,18 +55,28 @@ section{
     background-color: #18181b;
 }
 
-.description-section h3{
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: white;
-}
-
 .description-section h3, p{
     color: rgb(220, 220, 220);
     line-height: 29px;
 }
 
+.description-section h3{
+    font-size: 21px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    color: white;
+}
+
+
+
 .description-section p{
     font-size: 18px;
+}
+
+.bi{
+    font-size: 30px;
+}
+
+.bi-rocket{
+    display: inline-block; transform: rotate(45deg);
 }
