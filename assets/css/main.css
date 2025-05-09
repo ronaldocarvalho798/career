@@ -38,6 +38,7 @@ main{
     z-index: 20;
     display: flex;
     flex-direction: column;
+    animation: fadeUp 0.6s ease-in-out;
 }
 
 .container-text h1{
@@ -83,4 +84,43 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 7px;
+    animation: scale 0.6s ease;
+}
+
+
+@keyframes scale {
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
