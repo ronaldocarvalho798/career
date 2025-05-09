@@ -9,13 +9,12 @@ main{
     justify-content: center;
     position: relative;
     height: 100vh;
-    padding: 3rem 7rem 3rem;
+    padding: 3rem 11rem;
 }
 
 .container{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     position: relative;
     border-radius: 10px;
 }
@@ -26,14 +25,14 @@ main{
     top: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, #07070C 60%, #07070c14 100%);
+    background-image: linear-gradient(to right, #07070C 65%, #07070c14 100%);
     border-radius: 10px;
     z-index: 1;
 }
 
 .container-text{
-    width: 52%;
-    padding: 3rem 0;
+    width: 58%;
+    padding: 4rem 0;
     position: relative;
     z-index: 20;
     display: flex;
@@ -42,7 +41,7 @@ main{
 }
 
 .container-text h1{
-    font-size: 45px;
+    font-size: 57px;
     font-weight: 500;
     background-image: linear-gradient(135deg, #B380FF, #7AF0FF);
     -webkit-background-clip: text;
@@ -52,6 +51,15 @@ main{
 .container-text p{
     font-size: 1.2rem;
     margin: 30px 0;
+}
+
+.container-text span{
+    font-weight: 300;
+    font-size: 35px;
+    background-image: linear-gradient(135deg, #B380FF, #7AF0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .container-button{
