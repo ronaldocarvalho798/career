@@ -49,11 +49,6 @@
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-.hidden {
-    transform: translateY(50px);
-    opacity: 0;
-}
-
 .description-section.visible {
     transform: translateY(0px);
     opacity: 1;

@@ -35,6 +35,7 @@
 
 .section-description{
     padding: 0.5rem 0rem 0rem 4rem;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .span-number{
@@ -47,6 +48,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.span-number:nth-child(1){
+    animation-delay: 0;
+}
+
+.span-number:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.span-number:nth-child(3){
+    animation-delay: 0.4s;
 }
 
 .span-number::after{
@@ -58,12 +72,11 @@
     background-color: #373737;
 }
 
-.span-number::before{
-    content: "";
+.column{
     position: absolute;
-    top: 100%;
-    height: 100px;
-    width: 3px;
+    width: 0.18rem;
+    height: 75%;
+    left: 20px;
     background-color: #373737;
 }
 

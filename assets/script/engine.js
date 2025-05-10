@@ -7,6 +7,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll('.description-section').forEach(el => observer.observe(el));
+const elementsToObserve = document.querySelectorAll('.description-section, .span-number, .section-description');
+elementsToObserve.forEach(el => observer.observe(el));
 
-console.log('Olá')
