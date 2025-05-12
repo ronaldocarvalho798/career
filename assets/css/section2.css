@@ -3,7 +3,7 @@
     justify-content: center;
     position: relative;
     height: 100vh;
-    padding: .8rem 7rem;
+    padding: 0rem 7rem;
 }
 
 .section-image{
@@ -22,6 +22,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 0.8rem 0;
 }
 
 .row{
