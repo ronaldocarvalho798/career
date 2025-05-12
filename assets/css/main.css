@@ -64,7 +64,7 @@ main{
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0px -3px 10px 0px #00000040 inset;
-    background: linear-gradient(180deg, #73eeee -11.11%, #6e25ed 100%);
+    background: linear-gradient(180deg, #73deee -11.11%, #4c25ed 100%);
     font-size: 1.2rem;
     font-weight: 500;
     transition: 0.3s ease-in-out;
