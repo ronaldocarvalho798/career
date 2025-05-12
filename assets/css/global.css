@@ -23,6 +23,12 @@ a{
     background-clip: text;
 }
 
+.title-white{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
 .hidden {
     transform: translateY(50px);
     opacity: 0;
