@@ -3,6 +3,7 @@ main{
     display: flex;
     justify-content: center;
     position: relative;
+    text-align: center;
     height: 100vh;
     padding: 3rem 11rem;
 }
@@ -11,7 +12,6 @@ main{
     display: flex;
     justify-content: space-between;
     position: relative;
-    border-radius: 10px;
 }
 
 .ovl{
@@ -26,7 +26,6 @@ main{
 }
 
 .container-text{
-    width: 58%;
     padding: 4rem 0;
     position: relative;
     z-index: 20;
@@ -37,13 +36,14 @@ main{
 
 .container-text h1{
     font-size: 57px;
+    font-weight: 600;
 }
 
 .container-text p{
     font-size: 1.2rem;
+    margin: 40px auto;
     color: rgb(145 142 160);
-    width: 90%;
-    margin: 30px 0;
+    max-width: 500px;
 }
 
 .container-text span{
@@ -52,15 +52,13 @@ main{
 }
 
 .container-button{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    align-items: center;
 }
 
 .container-button button{
     cursor: pointer;
     color: white;
-    padding: 12px 22px;
+    padding: 12px 28px;
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0px -3px 10px 0px #00000040 inset;
@@ -72,18 +70,6 @@ main{
 
 .container-button button:hover{
     opacity: .8;
-}
-
-.container-image{
-    position: relative;
-    z-index: -2;
-    width: 35%;
-    background-image: url(/assets/images/main.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 7px;
-    animation: scale 0.6s ease;
 }
 
 
