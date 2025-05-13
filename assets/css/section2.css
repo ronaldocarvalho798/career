@@ -1,12 +1,59 @@
 .technologies{
-    border: 1px solid red;
-    padding: 0rem 11rem;
+    padding: 1rem 11rem;
 }
 
 .back{
-    height: 500px;
-    width: 100%;
-    background-image: url(/assets/images/main.png);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-image: url(/assets/images/2\ blur.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right 35% bottom 25%;
+    background-size: cover;
+    overflow: hidden;
+    border: 1px solid #cacaca2b;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.text-description{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 240px;
+    height: 370px;
+    backdrop-filter: blur(100px); /* <- aplica o blur no fundo */
+    background-color: rgba(255, 255, 255, 0.04); /* <- cor semi-transparente para ver o fundo */
+    -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
+    border: 1px solid #cacaca2b;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.card h2{
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.text-description p{
+    color: rgb(145 142 160);
+}
+
+.card img{
+    height: 100px;
 }
