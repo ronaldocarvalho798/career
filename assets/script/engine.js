@@ -15,10 +15,7 @@ const links = document.querySelectorAll('.menu-principal .link');
 
 links.forEach(link => {
   link.addEventListener('click', function () {
-    // Remove a classe 'active' de todos os links
     links.forEach(item => item.classList.remove('active'));
-    
-    // Adiciona a classe 'active' apenas ao link clicado
     this.classList.add('active');
   });
 });
