@@ -12,7 +12,7 @@ main{
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: cover;
-    padding: 6rem 11rem;
+    padding: 8rem 11rem;
 }
 
 .container {
@@ -50,7 +50,7 @@ main{
 
 .container-text p{
     font-size: 1.2rem;
-    margin: 40px auto;
+    margin: 20px auto 100px auto;
     color: rgb(145 142 160);
     max-width: 500px;
 }
