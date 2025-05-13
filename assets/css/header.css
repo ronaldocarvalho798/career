@@ -1,0 +1,103 @@
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.5rem 11rem;
+    z-index: 100;
+}
+
+.border-bottom{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0; 
+    background: linear-gradient(to left,transparent 5%, #2f2d3b 50%, transparent 95%);
+}
+
+.header-bg {
+  content: ""; 
+  position: absolute;
+  inset: 0;
+  background-color: #03001476;
+  backdrop-filter: blur(8px);;
+  -webkit-backdrop-filter: blur(8px); 
+  z-index: -1; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-bg.visib, .border-bottom.visib {
+  opacity: 1;
+}
+
+.img-header{
+    width: 80px;
+}
+
+.header__nav{
+}
+
+.menu-principal{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.link{
+    position: relative;
+    font-size: 1rem;
+    padding: 5px 16px;
+    border-radius: 30px;
+    color: rgb(145 142 160);
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.link.active{
+    color: white;
+    font-weight: 500;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 10.51%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.link:hover{
+    color: white;
+    border-radius: 30px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 10.51%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.link:hover::before{
+    content: '';
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 2.56%, rgba(255, 255, 255, 0.4) 51.48%, rgba(255, 255, 255, 0) 97.44%);
+    height: 1px;
+    position: absolute;
+    left: 25%;
+    top: 0px;
+    width: 50%;
+}
+
+.link.active:before{
+     content: '';
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 2.56%, rgba(255, 255, 255, 0.4) 51.48%, rgba(255, 255, 255, 0) 97.44%);
+    height: 1px;
+    position: absolute;
+    left: 25%;
+    top: 0px;
+    width: 50%;
+}
+
+
+
+
+.text-menu{
+
+}

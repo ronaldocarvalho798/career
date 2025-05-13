@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -12,6 +13,11 @@ body{
 
 a{
     text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
 }
 
 .text-style{
