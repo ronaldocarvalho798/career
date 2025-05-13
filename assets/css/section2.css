@@ -17,6 +17,7 @@
 }
 
 .text-description{
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
@@ -31,9 +32,8 @@
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 25px;
     width: 240px;
     height: 370px;
     backdrop-filter: blur(100px); /* <- aplica o blur no fundo */
@@ -41,7 +41,7 @@
     -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
     border: 1px solid #cacaca2b;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .card h2{
@@ -50,7 +50,12 @@
     font-size: 1.2rem;
 }
 
-.text-description p{
+.card p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.text-description p, .card p{
     color: rgb(145 142 160);
 }
 
