@@ -2,6 +2,7 @@ header{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -9,24 +10,42 @@ header{
     z-index: 100;
 }
 
+.border-bottom{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0; 
+    background: linear-gradient(to left,transparent 5%, #2f2d3b 50%, transparent 95%);
+}
+
 .header-bg {
   content: ""; 
   position: absolute;
   inset: 0;
   background-color: #03001476;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);;
   -webkit-backdrop-filter: blur(8px); 
   z-index: -1; 
   opacity: 0; 
   transition: opacity 0.3s ease-in-out;
 }
 
-.header-bg.visib {
+.header-bg.visib, .border-bottom.visib {
   opacity: 1;
 }
 
 .img-header{
     width: 80px;
+}
+
+#rocket{
+    all: unset;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
 }
 
 main{

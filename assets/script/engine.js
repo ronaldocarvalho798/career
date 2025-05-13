@@ -12,10 +12,10 @@ elementsToObserve.forEach(el => observer.observe(el));
 
 window.addEventListener('scroll', function() {
   if (window.scrollY > 0 || document.documentElement.scrollTop > 0) {
-    console.log("O scroll não está mais no topo da página!");
+    document.querySelector('.border-bottom').classList.add('visib');
     document.querySelector('.header-bg ').classList.add('visib');
   } else {
-    console.log("O scroll voltou para o topo.");
+    document.querySelector('.border-bottom').classList.remove('visib');
     document.querySelector('.header-bg ').classList.remove('visib'); // <---- Correção aqui
   }
 });
