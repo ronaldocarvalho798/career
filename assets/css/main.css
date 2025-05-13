@@ -9,14 +9,20 @@ header{
     z-index: 100;
 }
 
-header::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #03001476;
-    backdrop-filter: blur(8px); /* desfoca o fundo */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
-    z-index: -1;
+.header-bg {
+  content: ""; 
+  position: absolute;
+  inset: 0;
+  background-color: #03001476;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  z-index: -1; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-bg.visib {
+  opacity: 1;
 }
 
 .img-header{
