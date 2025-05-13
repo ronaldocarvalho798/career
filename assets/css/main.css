@@ -1,18 +1,50 @@
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.5rem 11rem;
+    z-index: 100;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #03001476;
+    backdrop-filter: blur(8px); /* desfoca o fundo */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    z-index: -1;
+}
+
+.img-header{
+    width: 80px;
+}
 
 main{
     display: flex;
     justify-content: center;
     position: relative;
     text-align: center;
+    background-image: url(/assets/images/back3.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
     height: 100vh;
-    padding: 3rem 11rem;
+    padding: 6rem 11rem;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 1rem;
 }
+
 
 .ovl{
     position: absolute;
@@ -22,7 +54,6 @@ main{
     bottom: 0;
     background-image: linear-gradient(to right, #030014 65%, #0300140f 100%);
     border-radius: 10px;
-    z-index: 1;
 }
 
 .container-text{
