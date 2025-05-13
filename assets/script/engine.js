@@ -16,6 +16,6 @@ window.addEventListener('scroll', function() {
     document.querySelector('.header-bg ').classList.add('visib');
   } else {
     document.querySelector('.border-bottom').classList.remove('visib');
-    document.querySelector('.header-bg ').classList.remove('visib'); // <---- Correção aqui
+    document.querySelector('.header-bg ').classList.remove('visib');
   }
 });
