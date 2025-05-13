@@ -4,7 +4,6 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-radius: 10px;
     overflow: hidden;
     padding: 0.5rem 11rem;
     z-index: 100;
@@ -39,9 +38,6 @@ header{
 
 .img-header{
     width: 80px;
-}
-
-.header__nav{
 }
 
 .menu-principal{
@@ -93,11 +89,4 @@ header{
     left: 25%;
     top: 0px;
     width: 50%;
-}
-
-
-
-
-.text-menu{
-
 }
