@@ -24,7 +24,7 @@ links.forEach(link => {
 window.addEventListener('scroll', function() {
   if (window.scrollY > 0 || document.documentElement.scrollTop > 0) {
     document.querySelector('header').classList.add('overl');
-    document.querySelector('.border-bottom').classList.add('overl');
+    document.querySelector('.border-bottom').classList.add('visib');
   } else {
     document.querySelector('header').classList.remove('overl');
     document.querySelector('.border-bottom').classList.remove('visib');
