@@ -42,24 +42,24 @@
     gap: 25px;
     width: 240px;
     height: 370px;
-    backdrop-filter: blur(100px); /* <- aplica o blur no fundo */
     background-color: rgba(255, 255, 255, 0.04); /* <- cor semi-transparente para ver o fundo */
-    -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
     border: 1px solid #cacaca2b;
     border-radius: 20px;
     padding: 1.5rem 1rem;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-.card:first-child{
-    transition-delay: 0.3s;
+
+.card:nth-child(1){
+    transition-delay: 0.2s;
 }
 
 .card:nth-child(2){
-    transition-delay: 0.6s;
+    transition-delay: 0.4s;
 }
 
 .card:nth-child(3){
-    transition-delay: 0.9s;
+    transition-delay: 0.6s;
 }
 
 .card h2{

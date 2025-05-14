@@ -122,11 +122,6 @@
   z-index: 1;
 }
 
-.description-section.visible {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .description-section:nth-child(2){
     transition-delay: 0.2s;
 }
@@ -160,15 +155,5 @@
     padding: 0 .5rem;
 }
 
-.bi{
-    font-size: 45px;
-    background: linear-gradient(45deg, #B380FF, #7AF0FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
-.bi-rocket{
-    display: inline-block; transform: rotate(45deg);
-}
 
