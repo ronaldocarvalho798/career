@@ -23,10 +23,10 @@ links.forEach(link => {
 
 window.addEventListener('scroll', function() {
   if (window.scrollY > 0 || document.documentElement.scrollTop > 0) {
-    document.querySelector('.border-bottom').classList.add('visib');
-    document.querySelector('.header-bg ').classList.add('visib');
+    document.querySelector('header').classList.add('overl');
+    document.querySelector('.border-bottom').classList.add('overl');
   } else {
+    document.querySelector('header').classList.remove('overl');
     document.querySelector('.border-bottom').classList.remove('visib');
-    document.querySelector('.header-bg ').classList.remove('visib');
   }
 });
