@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const elementsToObserve = document.querySelectorAll('.description-section, .contain, .section-description');
+const elementsToObserve = document.querySelectorAll('.description-section, .text-description, .card');
 elementsToObserve.forEach(el => observer.observe(el));
 
 
