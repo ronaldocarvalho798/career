@@ -17,6 +17,11 @@ links.forEach(link => {
   link.addEventListener('click', function () {
     links.forEach(item => item.classList.remove('active'));
     this.classList.add('active');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
   });
 });
 
