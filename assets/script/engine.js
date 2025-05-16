@@ -20,6 +20,20 @@ links.forEach(link => {
   });
 });
 
+const iconMenu = document.querySelector('.iconMenu');
+const menu = document.querySelector('.nav--mobile');
+
+
+iconMenu.addEventListener('click', function () {
+  iconMenu.classList.toggle('bi-list');
+  iconMenu.classList.toggle('bi-x');
+   if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+});
+
 
 window.addEventListener('scroll', function() {
   if (window.scrollY > 0 || document.documentElement.scrollTop > 0) {
@@ -30,3 +44,5 @@ window.addEventListener('scroll', function() {
     document.querySelector('.border-bottom').classList.remove('visib');
   }
 });
+
+

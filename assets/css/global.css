@@ -57,3 +57,8 @@ ul{
 .bi-rocket{
     display: inline-block; transform: rotate(45deg);
 }
+
+.iconMenu{
+    cursor: pointer;
+    display: none;
+}
