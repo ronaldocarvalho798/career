@@ -1,4 +1,19 @@
-@media (max-width:1300px) {
+@media (max-width:1350px) {
+    .background-section {
+        padding: 3rem 8rem;
+    }
+
+    .section-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-section h2 {
+        font-size: 35px;
+    }
+
+    /* section tech */
+
     .technologies {
         padding: 1rem 8rem;
     }
@@ -19,6 +34,29 @@
 }
 
 @media (max-width:999px){
+
+    .background-section {
+        padding: 3rem 5rem;
+    }
+
+    .section-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description-section {
+        gap: 10px;
+        width: 450px;
+        height: 330px;
+    }
+
+    .text-section h2 {
+        text-align: center;
+    }
+
+
+    /* section tech */
+
      .technologies {
         padding: 1rem 5rem;
     }
@@ -47,6 +85,29 @@
 }
 
 @media (max-width: 600px){
+
+    .background-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description-section {
+        width: 300px;
+        height: 390px;
+    }
+
+    .text-section h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* section tech */
+
+
     .technologies {
         padding: 1rem 1.5rem;
     }
