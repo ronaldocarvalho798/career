@@ -1,4 +1,10 @@
 @media (max-width:1350px) {
+    main {
+        padding: 9rem 8rem;
+    }
+
+    /* section icons */
+
     .background-section {
         padding: 3rem 8rem;
     }
@@ -34,6 +40,15 @@
 }
 
 @media (max-width:999px){
+
+    main {
+        padding: 9rem 5rem;
+    }
+
+    .container-text h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
 
     .background-section {
         padding: 3rem 5rem;
@@ -85,6 +100,27 @@
 }
 
 @media (max-width: 600px){
+
+    main {
+        padding: 9rem 1.5rem;
+    }
+
+    .container-text h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .container-text p {
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .container-button button {
+        padding: 8px 20px;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
     .background-section {
         padding: 3rem 1.5rem;
