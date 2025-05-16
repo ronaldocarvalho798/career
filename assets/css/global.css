@@ -9,6 +9,7 @@ body{
     background-color: #030014;
     color: white;
     font-family: "Sora", sans-serif;
+    overflow-x: hidden;
 }
 
 a{
