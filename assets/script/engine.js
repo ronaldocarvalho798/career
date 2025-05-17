@@ -11,24 +11,18 @@ const elementsToObserve = document.querySelectorAll('.description-section, .text
 elementsToObserve.forEach(el => observer.observe(el));
 
 
-const links = document.querySelectorAll('.menu-principal .link');
-
+/* Add Style CSS Link Menu*/
+const links = document.querySelectorAll('.link');
 links.forEach(link => {
   link.addEventListener('click', function () {
     links.forEach(item => item.classList.remove('active'));
-    this.classList.add('active');
-    if (menu.style.display === 'block') {
-      menu.style.display = 'none';
-    } else {
-      menu.style.display = 'block';
-    }
+    this.classList.add('active'); 
   });
 });
 
+/* Abrir Menu Mobile e Toggle IconMenu */
 const iconMenu = document.querySelector('.iconMenu');
 const menu = document.querySelector('.nav--mobile');
-
-
 iconMenu.addEventListener('click', function () {
   iconMenu.classList.toggle('bi-list');
   iconMenu.classList.toggle('bi-x');
